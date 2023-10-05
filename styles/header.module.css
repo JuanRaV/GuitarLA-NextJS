@@ -44,3 +44,7 @@
 .navegacion a:hover{
     background-color: var(--primary);
 }
+
+.active{
+    background-color: var(--primary);
+}
