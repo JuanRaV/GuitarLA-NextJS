@@ -10,7 +10,10 @@ const Header = () => {
   return (
     <header className={styles.header}>
         <div className={`contenedor ${styles.barra}`}>
-            <Image src="/img/logo.svg" width={300} height={40} alt='imagen logotipo'/>
+          <Link href='/'>
+              <Image src="/img/logo.svg" width={300} height={40} alt='imagen logotipo'/>
+          </Link>
+            
             <nav className={styles.navegacion}>
                 <Link href="/" className={router.pathname === '/' ? styles.active : ''}>Inicio</Link>
                 <Link href="/nosotros" className={router.pathname === '/nosotros' ? styles.active : ''}>Nosotros</Link>
