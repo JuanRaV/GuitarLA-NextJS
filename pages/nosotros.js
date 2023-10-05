@@ -10,7 +10,7 @@ const Nosotros = () => {
         description="Sobre nosotros GuitarLA"
     >
         <main className='contenedor'>
-          <h2 className='heading'>Nosotros</h2>
+          <h1 className='heading'>Nosotros</h1>
           <div className={styles.contenido}>
             <Image alt='Imagen sobre nosostros' src='/img/nosotros.jpg' width={1000} height={800}/>
             <div>
