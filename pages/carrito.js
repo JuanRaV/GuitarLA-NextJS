@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import Image from 'next/image'
 import styles from '../styles/carrito.module.css'
 
-const Carrito = ({carrito,actualizarCantidad}) => {
+const Carrito = ({carrito,actualizarCantidad,eliminarProducto}) => {
     const [total,setTotal] = useState(0)
     useEffect(()=>{
         const calculoTotal = carrito.reduce((total, productoActual)=>total+(productoActual.cantidad * productoActual.precio),0)
@@ -46,6 +46,11 @@ const Carrito = ({carrito,actualizarCantidad}) => {
                                     <p className={styles.precio}>$<span>{producto.precio}</span></p>
                                     <p className={styles.subtotal}>Subtotal: $<span>{producto.cantidad * producto.precio}</span></p>
                                 </div>
+                                <button 
+                                    className={styles.eliminar}
+                                    type='button'
+                                    onClick={()=>eliminarProducto(producto.id)}
+                                >X</button>
                             </div>
                         ))
                     )}

@@ -24,7 +24,7 @@ export default function Producto({guitarra,agregarCarrito}) {
 
         //Pasando la informacion al context
         agregarCarrito(guitarraSeleccionada)
-
+        
         
 
     }
@@ -56,6 +56,7 @@ export default function Producto({guitarra,agregarCarrito}) {
                     <input
                         type='submit'
                         value="Agregar al carrito"
+                        
                     />
                 </form>
             </div>
