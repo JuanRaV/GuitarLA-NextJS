@@ -25,7 +25,7 @@ export default function Producto({guitarra,agregarCarrito}) {
         //Pasando la informacion al context
         agregarCarrito(guitarraSeleccionada)
         
-        
+        window.location = '/carrito'
 
     }
   return (
